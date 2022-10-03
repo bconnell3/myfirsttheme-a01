@@ -16,8 +16,20 @@
   */
 function myfirsttheme_setup() {
     add_theme_support('title-tag');
+
+    add_theme_support('post-thumbnails');
+
+    // This theme will use wp_nav_menu() in one location
+    register_nav_menus(
+        array(
+            'main-menu' => 'Main Menu'
+        )
+    );
+
 }
 add_action('after_setup_theme', 'myfirsttheme_setup');
+
+
 
  
 //this function will add all of your styles and scripts, everything from Google Fonts to resets.

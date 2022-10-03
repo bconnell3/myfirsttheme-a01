@@ -20,5 +20,14 @@
 </head>
 
 <body <?php body_class(); ?> >
-       		<header></header>
+       		<header>
+				<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'primary-menu',
+							'menu_id' => 'primary-menu'
+						)
+					);
+				?>
+			</header>
             <div id="content" class=”site-content” >
