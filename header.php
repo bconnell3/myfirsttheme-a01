@@ -21,13 +21,14 @@
 
 <body <?php body_class(); ?> >
        		<header>
-				<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'primary-menu',
-							'menu_id' => 'primary-menu'
-						)
-					);
-				?>
+
+<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'main-menu',
+					'menu_id'        => 'main-menu',
+				)
+			);
+			?>
 			</header>
             <div id="content" class=”site-content” >
